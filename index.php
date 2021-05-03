@@ -8,9 +8,19 @@
 </head>
 <body>
     <?php
-        $string = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, numquam repellendus. Beatae tempore reprehenderit doloribus. Earum illum quasi vel, rem, minus molestiae maxime ullam, ipsam qui soluta quod vitae. Magnam?";
-        $goodString = str_replace($_GET['badword'], '***', $string);
-        echo $goodString;
+        $badword = $_GET["badword"];
+        $original_string = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, numquam repellendus. Beatae tempore reprehenderit doloribus. Earum illum quasi vel, rem, minus molestiae maxime ullam, ipsam qui soluta quod vitae. Magnam?";
+        $original_string_lng = strlen($original_string);
+        $good_string = str_replace($badword, '***', $original_string);
     ?>
+    <h1>
+        <?php echo $original_string; ?>
+    </h1>
+    <h1>
+        La stringa è lunga: <?php echo $original_string_lng; ?> caratteri.
+    </h1>
+    <h1>
+        <?php echo $good_string; ?>
+    </h1>
 </body>
 </html>
