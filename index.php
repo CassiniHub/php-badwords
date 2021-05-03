@@ -10,7 +10,7 @@
     <?php
         $string = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, numquam repellendus. Beatae tempore reprehenderit doloribus. Earum illum quasi vel, rem, minus molestiae maxime ullam, ipsam qui soluta quod vitae. Magnam?";
         $goodString = str_replace($_GET['badword'], '***', $string);
-        echo $goodstring;
+        echo $goodString;
     ?>
 </body>
 </html>
